@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Create Password </title>
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <h1>Create Password</h1>
+    </div><br><br>
+    <div class="new-password">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Your password" class="pass">
+      <i class="fa-solid fa-eye" onClick="passToggle()"></i>
+      <i class="fa-solid fa-eye-slash" onClick="passToggle()"></i>
+      <br>
+    </div>
+    <label for="confirm_password">Confirm password</label>
+    <input type="password" id="confirm_password" placeholder="Confirm password">
+
+    <p id="message"> </p>
+    <input type="button" id="button" value="SUBMIT" onclick="checkPassword();">
+
+  </form>
+
+  <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
